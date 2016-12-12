@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    
+    <EntityComponent xsi:type="MyObjectBuilder_CraftingComponentBlockDefinition">
+      <Id>
+        <TypeId>MyObjectBuilder_CraftingComponentBlock</TypeId>
+        <SubtypeId>BonFire</SubtypeId>
+      </Id>
+      <AvailableBlueprintClasses>Meals Rendering</AvailableBlueprintClasses>
+      <AcceptedOperatingItems>
+        <OperatingItem>
+          <TypeId>MyObjectBuilder_Component</TypeId>
+          <SubtypeId>ScrapWood</SubtypeId>
+        </OperatingItem>
+        <OperatingItem>
+          <TypeId>MyObjectBuilder_Component</TypeId>
+          <SubtypeId>ScrapWoodBranches</SubtypeId>
+        </OperatingItem>
+        <OperatingItem>
+          <TypeId>MyObjectBuilder_Component</TypeId>
+          <SubtypeId>WoodenSticks</SubtypeId>
+        </OperatingItem>
+      </AcceptedOperatingItems>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_CraftingComponentBlockDefinition">
+      <Id>
+        <TypeId>MyObjectBuilder_CraftingComponentBlock</TypeId>
+        <SubtypeId>Smelter</SubtypeId>
+      </Id>
+      <AvailableBlueprintClasses>Smelting</AvailableBlueprintClasses>
+      <AcceptedOperatingItems>
+        <OperatingItem>
+          <TypeId>MyObjectBuilder_Component</TypeId>
+          <SubtypeId>ScrapWood</SubtypeId>
+        </OperatingItem>
+        <OperatingItem>
+          <TypeId>MyObjectBuilder_Component</TypeId>
+          <SubtypeId>ScrapWoodBranches</SubtypeId>
+        </OperatingItem>
+        <OperatingItem>
+          <TypeId>MyObjectBuilder_Component</TypeId>
+          <SubtypeId>WoodenSticks</SubtypeId>
+        </OperatingItem>
+      </AcceptedOperatingItems>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>MyObjectBuilder_Inventory</TypeId>
+        <SubtypeId>SmelterInventory</SubtypeId>
+      </Id>
+      <MaxItemCount>7</MaxItemCount>
+      <MultiplierEnabled>false</MultiplierEnabled>
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

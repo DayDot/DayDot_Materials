@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_FurnaceBlockDefinition">
+      <Id>
+        <TypeId>MyObjectBuilder_FurnaceBlock</TypeId>
+        <SubtypeId>Smelter</SubtypeId>
+      </Id>
+      <BlockPairName>Smelter</BlockPairName>
+      <DisplayName>Basic Smelter</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\smelter.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\smelter.mwm</Model>
+      <Components>
+        <Component Subtype="LargeStone" Count="15" />
+        <Component Subtype="IronIngot" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="IronIngot" Index="1" />
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <Direction>Horizontal</Direction>
+      <Rotation>Vertical</Rotation>
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+      </MountPoints>
+      <ParticleScale>0.22</ParticleScale>
+      <LightRadius Min="2" Max="2" Default="2" />
+      <LightFalloff Min="0.3" Max="0.3" Default="0.3" />
+      <LightIntensity Min="0.9" Max="0.9" Default="0.9" />
+      <PrimarySound>BlockBonfire</PrimarySound>
+      <ActionSound>HudCraftBarProgressLoop</ActionSound>
+      <PhysicalMaterial>Rock</PhysicalMaterial>
+      <Mass>12</Mass>
+      <AvailableInSurvival>true</AvailableInSurvival>
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>

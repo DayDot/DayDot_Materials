@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Components>
+  
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>Smelter</SubtypeId>
+      </Id>
+      <DisplayName>Basic Smelter</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\smelter.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.25</Y>
+        <Z>0.25</Z>
+      </Size>
+      <Mass>50</Mass>
+      <Volume>150</Volume>
+      <Model>Models\Cubes\Small\smelter.mwm</Model>
+      <MaxIntegrity>100</MaxIntegrity>
+      <DropProbability>0</DropProbability>
+      <CanSpawnFromScreen>false</CanSpawnFromScreen>
+      <MaxStackAmount>1</MaxStackAmount>
+      <Health>100</Health>
+    </Component>
+
+  </Components>
+</Definitions>

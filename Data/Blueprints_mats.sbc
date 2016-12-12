@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+  
+<!-- Deprecated, smelter now a large block
+    <Blueprint xsi:type="MyObjectBuilder_BlockBlueprintDefinition">
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Smelter</SubtypeId>
+      </Id>
+      <DisplayName>Basic Smelter</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\smelter.dds</Icon>
+      <Prerequisites>
+        <Item Amount="15" TypeId="Component" SubtypeId="LargeStone" />
+        <Item Amount="5" TypeId="Component" SubtypeId="IronIngot" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="FurnaceBlock" SubtypeId="Smelter" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+    </Blueprint> -->
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>IronCooking</SubtypeId>
+      </Id>
+      <DisplayName>Iron Ingot</DisplayName>
+      <Icon>Textures\GUI\Icons\Ingots\iron_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="10" TypeId="Component" SubtypeId="IronOre" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="IronIngot" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>IronSmelting</SubtypeId>
+      </Id>
+      <DisplayName>Iron Ingot</DisplayName>
+      <Icon>Textures\GUI\Icons\Ingots\iron_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="5" TypeId="Component" SubtypeId="IronOre" />
+        <Item Amount="1" TypeId="Component" SubtypeId="CoalOre" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="IronIngot" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>GoldSmelting</SubtypeId>
+      </Id>
+      <DisplayName>Gold Ingot</DisplayName>
+      <Icon>Textures\GUI\Icons\Ingots\gold_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="10" TypeId="Component" SubtypeId="GoldOre" />
+        <Item Amount="2" TypeId="Component" SubtypeId="CoalOre" />
+      </Prerequisites>
+      <Result Amount="0.5" TypeId="Component" SubtypeId="GoldIngot" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+    </Blueprint>
+    
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>SilverSmelting</SubtypeId>
+      </Id>
+      <DisplayName>Silver Ingot</DisplayName>
+      <Icon>Textures\GUI\Icons\Ingots\silver_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="10" TypeId="Component" SubtypeId="SilverOre" />
+        <Item Amount="2" TypeId="Component" SubtypeId="CoalOre" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="SilverIngot" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ClaySmelting</SubtypeId>
+      </Id>
+      <DisplayName>Clay Bricks</DisplayName>
+      <Icon>Textures\GUI\Icons\Ingots\clay_brick.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Component" SubtypeId="ClayOre" />
+        <Item Amount="1" TypeId="Component" SubtypeId="CoalOre" />
+      </Prerequisites>
+      <Result Amount="5" TypeId="Component" SubtypeId="ClayBrick" />
+      <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+    </Blueprint>  
+
+  </Blueprints>
+</Definitions>

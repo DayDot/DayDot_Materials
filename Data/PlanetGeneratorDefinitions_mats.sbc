@@ -1,0 +1,521 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--Planets -->
+  <Definition xsi:type="PlanetGeneratorDefinition">
+    <Id>
+      <TypeId>PlanetGeneratorDefinition</TypeId>
+      <SubtypeId>EarthLike</SubtypeId>
+    </Id>
+    <Environment>
+      <TypeId>MyObjectBuilder_ProceduralWorldEnvironment</TypeId>
+      <SubtypeId>Earth Environment</SubtypeId>
+    </Environment>
+    <PlanetMaps Material="true" Ores="false" Biome="true" Occlusion="false"/>
+    <MapProvider xsi:type="MyObjectBuilder_PlanetTextureMapProvider" Path="EarthLike"/>
+    <Version>100000</Version>  
+    
+    <ComplexMaterials>
+
+      <MaterialGroup Name="LowLandGrassland">
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="3"/>
+            <Layer Material="Clay" Depth="3"/>
+            <Layer Material="Stone" Depth="10"/>
+            <Layer Material="Gold" Depth="3"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="0" Max="2"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="3"/>
+            <Layer Material="Clay" Depth="3"/>
+            <Layer Material="Stone" Depth="5"/>
+            <Layer Material="Iron" Depth="5"/>
+            <Layer Material="Stone" Depth="10"/>
+            <Layer Material="Silver" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="2" Max="3"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="3"/>
+            <Layer Material="Clay" Depth="3"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="3" Max="10"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="3"/>
+            <Layer Material="Clay" Depth="2"/>
+            <Layer Material="Stone" Depth="10"/>            
+            <Layer Material="Iron" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="10" Max="12"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="3"/>
+            <Layer Material="Clay" Depth="2"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="12" Max="25"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="3"/>
+            <Layer Material="Clay" Depth="1"/>
+            <Layer Material="Stone" Depth="10"/>            
+            <Layer Material="Silver" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="25" Max="28"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="3"/>
+            <Layer Material="Clay" Depth="1"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="28" Max="33"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="3"/>
+            <Layer Material="Clay" Depth="1"/>
+            <Layer Material="Stone" Depth="15"/>            
+            <Layer Material="Gold" Depth="10"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="33" Max="35"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="2"/>
+            <Layer Material="Stone" Depth="10"/>            
+            <Layer Material="Iron" Depth="5"/>
+            <Layer Material="Stone" Depth="5"/>
+            <Layer Material="Silver" Depth="3"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="35" Max="38"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="2"/>
+            <Layer Material="Stone" Depth="15"/>            
+            <Layer Material="Gold" Depth="3"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="38" Max="40"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="2"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="40" Max="55"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="55" Max="90"/>
+        </Rule>             
+
+        <!-- Higher ground -->
+        
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="0" Max="15"/>
+          <Height Min="0.5" Max="0.75"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="2"/>
+            <Layer Material="Soil" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="15" Max="35"/>
+          <Height Min="0.5" Max="0.75"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="35" Max="90"/>
+          <Height Min="0.5" Max="0.75"/>
+        </Rule>        
+        <Rule>
+          <Layers>
+            <Layer Material="Snow" Depth="4"/>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="3"/>
+            <Layer Material="Iron" Depth="5"/>            
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="0" Max="15"/>
+          <Height Min="0.75" Max="1"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Snow" Depth="3"/>
+            <Layer Material="Rocks_grass" Depth="2"/>
+            <Layer Material="Soil" Depth="5"/>
+            <Layer Material="Stone" Depth="10"/>
+            <Layer Material="Silver" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="15" Max="25"/>
+          <Height Min="0.75" Max="1"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Snow" Depth="2"/>
+            <Layer Material="Stone" Depth="15"/>
+            <Layer Material="Gold" Depth="5"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="25" Max="90"/>
+          <Height Min="0.75" Max="1"/>
+        </Rule>
+
+        <!--    Surface ores -->        
+
+        <Rule>
+          <Layers>
+            <Layer Material="Iron" Depth="4"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="26" Max="28"/>
+          <Height Min="0.50" Max="0.55"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Silver" Depth="3"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="30" Max="32"/>
+          <Height Min="0.62" Max="0.65"/>
+        </Rule>
+
+        <Rule>
+          <Layers>
+            <Layer Material="Silver" Depth="1"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="55" Max="57"/>
+          <Height Min="0.65" Max="0.68"/>
+        </Rule>
+        
+        <Rule>
+          <Layers>
+            <Layer Material="Gold" Depth="2"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="72" Max="75"/>
+          <Height Min="0.65" Max="0.68"/>
+        </Rule>
+        
+        <!-- Ores end -->
+        
+      </MaterialGroup>
+
+<!--    Forest areas -->
+
+      <MaterialGroup Name="Forest_Grass" Value="120">
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_grass" Depth="2"/>
+            <Layer Material="Soil" Depth="2"/>
+            <Layer Material="Stone" Depth="2"/>            
+            <Layer Material="Coal" Depth="4"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="0" Max="15"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_grass" Depth="2"/>
+            <Layer Material="Soil" Depth="2"/>
+            <Layer Material="Stone" Depth="2"/>            
+            <Layer Material="Coal" Depth="3"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="15" Max="25"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="3"/>
+            <Layer Material="Stone" Depth="2"/>            
+            <Layer Material="Coal" Depth="2"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="25" Max="45"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="2"/>
+            <Layer Material="Soil" Depth="2"/>
+            <Layer Material="Stone" Depth="2"/>
+            <Layer Material="Coal" Depth="1"/>            
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="45" Max="55"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="55" Max="90"/>
+        </Rule>
+      </MaterialGroup>
+
+      <MaterialGroup Name="Forest_Outer" Value="90">
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_needles" Depth="2"/>
+            <Layer Material="Soil" Depth="2"/>
+            <Layer Material="Stone" Depth="2"/>            
+            <Layer Material="Coal" Depth="4"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="0" Max="15"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_grass" Depth="2"/>
+            <Layer Material="Soil" Depth="2"/>
+            <Layer Material="Stone" Depth="2"/>            
+            <Layer Material="Coal" Depth="3"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="15" Max="25"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="3"/>
+            <Layer Material="Stone" Depth="2"/>            
+            <Layer Material="Coal" Depth="2"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="25" Max="45"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="2"/>
+            <Layer Material="Soil" Depth="2"/>
+            <Layer Material="Stone" Depth="2"/>
+            <Layer Material="Coal" Depth="1"/>            
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="45" Max="55"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="55" Max="90"/>
+        </Rule>
+      </MaterialGroup>
+
+      <MaterialGroup Name="Forest" Value="60">
+        <Rule>
+          <Layers>
+            <Layer Material="Woods" Depth="2"/>            
+            <Layer Material="Soil" Depth="2"/>
+            <Layer Material="Stone" Depth="2"/>            
+            <Layer Material="Coal" Depth="4"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="0" Max="15"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Woods_grass" Depth="2"/>
+            <Layer Material="Soil" Depth="2"/>
+            <Layer Material="Stone" Depth="2"/>            
+            <Layer Material="Coal" Depth="3"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="15" Max="25"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="3"/>
+            <Layer Material="Stone" Depth="2"/>            
+            <Layer Material="Coal" Depth="2"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="25" Max="45"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Rocks_grass" Depth="2"/>
+            <Layer Material="Soil" Depth="2"/>
+            <Layer Material="Stone" Depth="2"/>
+            <Layer Material="Coal" Depth="1"/>            
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="45" Max="55"/>
+        </Rule>
+        <Rule>
+          <Layers>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+          <Slope Min="55" Max="90"/>
+        </Rule>
+      </MaterialGroup>
+      
+      <MaterialGroup Name="FlowMap" Value="50">
+        <Rule>
+          <Layers>
+            <Layer Material="Grass" Depth="1"/>
+            <Layer Material="Soil" Depth="1"/>
+            <Layer Material="Stone" Depth="100"/>
+          </Layers>
+        </Rule>        
+      </MaterialGroup>
+      <MaterialGroup Name="Road" Value="67">
+        <Rule>
+          <Layers>
+            <Layer Material="Cobble" Depth="1"/>
+            <Layer Material="Soil" Depth="1"/>
+          </Layers>
+          <Slope Min="0" Max="90"/>
+        </Rule>
+      </MaterialGroup>
+      
+    </ComplexMaterials>
+    
+    <MaximumOxygen>1.0</MaximumOxygen>
+    <SurfaceGravity>1.0</SurfaceGravity>
+    <DefaultSurfaceMaterial Material="Grass" MaxDepth="1"/>
+    <DefaultSubSurfaceMaterial Material="Stone"/>
+    <HasAtmosphere>true</HasAtmosphere>
+    <Atmosphere>
+      <Breathable>true</Breathable>
+      <OxygenDensity>0.9</OxygenDensity>
+      <Density>1.0</Density>
+      <LimitAltitude>2.0</LimitAltitude>
+    </Atmosphere>
+    <AtmosphereSettings>
+          <RayleighScattering>
+              <X>100</X>
+              <Y>84</Y>
+              <Z>63</Z>
+          </RayleighScattering>
+          <MieScattering>50</MieScattering>
+          <MieColorScattering>
+              <X>44</X>
+              <Y>62</Y>
+              <Z>150</Z>
+          </MieColorScattering>
+          <RayleighHeight>36</RayleighHeight>
+          <RayleighHeightSpace>15</RayleighHeightSpace>
+          <RayleighTransitionModifier>0.4</RayleighTransitionModifier>
+          <MieHeight>200</MieHeight>
+          <MieG>0.9995474</MieG>
+          <Intensity>6</Intensity>
+          <SeaLevelModifier>1.0</SeaLevelModifier>
+          <AtmosphereTopModifier>1.1</AtmosphereTopModifier>
+          <FogIntensity>1.0</FogIntensity>
+          <Scale>1</Scale>
+      </AtmosphereSettings>
+    <CloudLayers>
+      <CloudLayer>
+        <!-- Far layer -->
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/EarthFarClouds.dds</Texture>
+        </Textures>
+        <RelativeAltitude>1.2</RelativeAltitude>
+        <RotationAxis>
+          <X>-0.2</X>
+          <Y>1</Y>
+          <Z>0.2</Z>
+        </RotationAxis>
+        <AngularVelocity>0.0002</AngularVelocity>
+        <InitialRotation>1.2</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>2.0</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+        <ApplyFogRelativeDistance>0.05</ApplyFogRelativeDistance>
+      </CloudLayer>
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+        </Textures>
+        <RelativeAltitude>1.3</RelativeAltitude>
+        <RotationAxis>
+          <X>0</X>
+          <Y>1</Y>
+          <Z>0</Z>
+        </RotationAxis>
+        <AngularVelocity>0.0006</AngularVelocity>
+        <InitialRotation>0.15</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>0.5</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.6</FadeOutRelativeAltitudeEnd>
+      </CloudLayer>
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+        </Textures>
+        <RelativeAltitude>2.3</RelativeAltitude>
+        <RotationAxis>
+          <X>0.2</X>
+          <Y>1</Y>
+          <Z>-0.2</Z>
+        </RotationAxis>
+        <AngularVelocity>0.0006</AngularVelocity>
+        <InitialRotation>0.5</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>0.7</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.5</FadeOutRelativeAltitudeEnd>
+      </CloudLayer>
+      <CloudLayer>
+        <Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+        <Textures>
+          <Texture>Textures/Models/Environment/Sky/Landsky_texture.dds</Texture>
+        </Textures>
+        <RelativeAltitude>3.3</RelativeAltitude>
+        <RotationAxis>
+          <X>-0.2</X>
+          <Y>1</Y>
+          <Z>0.2</Z>
+        </RotationAxis>
+        <AngularVelocity>0.0006</AngularVelocity>
+        <InitialRotation>1.2</InitialRotation>
+        <ScalingEnabled>false</ScalingEnabled>
+        <FadeOutRelativeAltitudeStart>0.8</FadeOutRelativeAltitudeStart>
+        <FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+      </CloudLayer>
+    </CloudLayers>
+    <MaterialsMaxDepth Min="4000" Max="4000"/>
+    <MaterialsMinDepth Min="20" Max="20"/>
+    <HillParams Min = "-0.02" Max ="0.1"/>
+  </Definition>
+</Definitions>

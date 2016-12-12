@@ -1,0 +1,42 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <BlueprintClasses>
+
+    <Class>
+      <Id>
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>Rendering</SubtypeId>
+      </Id>
+      <DisplayName>Rendering</DisplayName>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <HighlightIcon>Textures\GUI\Icons\Fake.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\Fake.dds</InputConstraintIcon>
+    </Class>
+
+    <Class>
+      <Id>
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>Smelting</SubtypeId>
+      </Id>
+      <DisplayName>Smelting</DisplayName>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <HighlightIcon>Textures\GUI\Icons\Fake.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\Fake.dds</InputConstraintIcon>
+    </Class>
+
+    
+  </BlueprintClasses>
+  
+  <BlueprintClassEntries>
+
+    <Entry Class="Meals" BlueprintSubtypeId="IronCooking" />
+
+    <Entry Class="Smelting" BlueprintSubtypeId="IronSmelting" />
+    <Entry Class="Smelting" BlueprintSubtypeId="GoldSmelting" />
+    <Entry Class="Smelting" BlueprintSubtypeId="SilverSmelting" />
+    <Entry Class="Smelting" BlueprintSubtypeId="ClaySmelting" />
+
+  </BlueprintClassEntries>
+
+</Definitions>
